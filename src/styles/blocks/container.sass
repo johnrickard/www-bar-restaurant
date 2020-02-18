@@ -1,0 +1,109 @@
+.container__navbar
+    top: 0
+    display: flex
+    position: fixed
+    min-height: 80px
+    min-width: 100%
+    z-index: 10
+    justify-content: space-between
+    background-color: $white-bg-color
+
+.container__navbar_logo, .container__navbar_burger
+    margin: auto 1em
+    color: $wine-color
+    text-align: center
+
+.container__navbar_logo
+    width: 114px
+    height: 45px
+    background-image: url('../images/logo-114.png')
+    background-repeat: no-repeat
+    background-size: contain
+
+.container__navbar_pop
+    position: fixed
+    z-index: 5
+    min-width: 100%
+    min-height: 100%
+    background-color: $wine-color
+
+.container__slider
+    width: 100%
+    max-width: 100%
+    height: 250px
+    max-height: 250px
+    margin-top: 80px
+
+.container__about
+    width: 100%
+    max-width: 100%
+
+.container__findus
+    background-color: $wine-color
+    width: 100%
+    max-width: 100%
+
+.container__reservation
+    width: 100%
+    max-width: 100%
+
+.container__footer
+    background-color: $wine-color
+    width: 100%
+    max-width: 100%
+
+.container__thanks
+    width: 100%
+    max-width: 100%
+
+.container__specials
+    width: 100%
+    max-width: 100%
+
+@media screen and (min-width: 900px)
+  .container__flex
+    padding: 2em
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    max-height: 1000px
+
+@media screen and (min-width: 900px)
+    .container__navbar
+        display: none
+
+@media screen and (min-width: 900px)
+    .container__slider
+        display: none
+        
+@media screen and (min-width: 900px)
+    .container__about
+        max-width: 48%
+        background-color: $white-bg-color
+
+@media screen and (min-width: 900px)
+    .container__findus
+        max-width: 48%
+        margin-top: 20px
+
+@media screen and (min-width: 900px)
+    .container__reservation
+        max-width: 40%
+        background-color: $white-bg-color
+
+@media screen and (min-width: 900px)
+    .container__about, .container__findus, .container__reservation, .container__thanks, .container__specials
+        border-radius: 20px
+        box-shadow: 0 5px 12px rgba(0, 0, 0, 0.80)
+
+@media screen and (min-width: 900px)
+    .container__thanks
+        max-width: 70%
+        background-color: $white-bg-color
+        margin: 30px auto
+
+@media screen and (min-width: 900px)
+    .container__specials
+        max-width: 40%
+        margin-top: 20px
+        background-color: $white-bg-color
