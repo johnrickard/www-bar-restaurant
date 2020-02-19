@@ -1,6 +1,4 @@
 .findus__header
-    padding: 10px 10px 0 10px
-    margin-bottom: 0 !important
     font-size: 3.5em
     color: $gold-color
 
@@ -11,12 +9,20 @@
     font-size: 1.4em
 
 .findus__subheader, .findus__text
-    padding: 10px
-    padding-top: 0
     color: $gold-color
 
 .findus__text
     color: white
+    margin-top: 1em
 
-.findus__map
-    background-color: $white-bg-color
+@media screen and (max-width: 899px)
+    .findus__map
+        margin: 1.5em -15px 0
+        background-color: $white-bg-color
+
+@media screen and (min-width: 900px)
+    .findus__map
+        margin-top: 1.5em
+        border-top-left-radius: 12px
+        border-top-right-radius: 12px
+        overflow: hidden

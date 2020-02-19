@@ -50,13 +50,16 @@ const Reservation = () => {
           <Button
             variant="primary"
             type="submit"
-            style={{ width: '100%', backgroundColor: '#341817' }}
+            style={{
+              width: '100%',
+              minHeight: '3em',
+              backgroundColor: '#341817',
+              borderColor: '#341817',
+              marginTop: '.5em',
+            }}
           >
             SEND
           </Button>
-          <Form.Text className="text-muted">
-            Or call us at +34 123 45 67 89
-          </Form.Text>
         </Form>
       </div>
     </div>
