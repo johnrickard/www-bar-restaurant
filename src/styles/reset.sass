@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text')
 @import url('https://fonts.googleapis.com/css?family=Open+Sans')
 
+a
+  &:hover
+    text-decoration: none !important
+
+.anchor
+  a
+    position: relative
+    visibility: hidden
+    top: -60px
+
+ol, ul
+  list-style: none
+  padding-left: 0
+
 @media screen and (min-width: 900px)
   body
     background-color: $grey-bg-color
