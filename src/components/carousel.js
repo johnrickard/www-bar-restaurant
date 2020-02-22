@@ -17,7 +17,6 @@ export default class extends React.Component {
           }}
           renderCenterLeftControls={({ previousSlide }) => null}
           renderCenterRightControls={({ nextSlide }) => null}
-          wrapAround={() => true}
         >
           <img src={Img1} alt="Yummy 1" />
           <img src={Img2} alt="Yummy 2" />
