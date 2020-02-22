@@ -56,6 +56,9 @@ const Reservation = () => {
               backgroundColor: '#341817',
               borderColor: '#341817',
               marginTop: '.5em',
+              color: 'white',
+              fontSize: '1em',
+              borderRadius: '.25em',
             }}
           >
             SEND

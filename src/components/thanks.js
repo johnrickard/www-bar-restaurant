@@ -15,7 +15,7 @@ export default class extends React.Component {
           </style>
         </Helmet>
         <h1 className="thanks__header">RESERVATION SENT</h1>
-        <div className="thanks__subheader">Thank you.</div>
+        <div className="thanks__subheader">Thank you</div>
         <Link to="/">
           <div className="thanks__text">
             <i class="fas fa-arrow-circle-left"></i> Click here to go back to
