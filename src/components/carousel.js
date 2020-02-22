@@ -10,6 +10,11 @@ export default class extends React.Component {
     return (
       <div className="container__slider">
         <Carousel
+          defaultControlsConfig={{
+            pagingDotsStyle: {
+              fill: 'white'
+            }
+          }}
           renderCenterLeftControls={({ previousSlide }) => null}
           renderCenterRightControls={({ nextSlide }) => null}
           wrapAround={() => true}
