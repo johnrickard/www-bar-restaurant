@@ -12,8 +12,8 @@ export default class extends React.Component {
         <Carousel
           defaultControlsConfig={{
             pagingDotsStyle: {
-              fill: 'white'
-            }
+              fill: 'white',
+            },
           }}
           renderCenterLeftControls={({ previousSlide }) => null}
           renderCenterRightControls={({ nextSlide }) => null}
