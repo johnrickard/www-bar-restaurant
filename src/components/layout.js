@@ -15,11 +15,13 @@ const Layout = () => {
     <>
       <Navbar />
       <Carousel />
-      <div className="container__flex">
-        <About />
-        <Findus />
-        <Reservation />
-        <Specials />
+      <div className="container__body">
+        <div className="container__flex">
+          <About />
+          <Findus />
+          <Reservation />
+          <Specials />
+        </div>
       </div>
       <Footer />
     </>

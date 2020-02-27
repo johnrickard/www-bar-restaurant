@@ -28,39 +28,19 @@
     z-index: 5
     min-width: 100%
     min-height: 100%
-    background-color: $wine-color
 
 .container__slider
-    width: 100%
-    max-width: 100%
     height: 250px
     max-height: 250px
     margin-top: 80px
 
 .container__about
-    width: 100%
-    max-width: 100%
     background-color: $white-bg-color
 
-.container__findus
+.container__navbar_pop, .container__findus, .container__footer
     background-color: $wine-color
-    width: 100%
-    max-width: 100%
 
-.container__reservation
-    width: 100%
-    max-width: 100%
-
-.container__footer
-    background-color: $wine-color
-    width: 100%
-    max-width: 100%
-
-.container__thanks
-    width: 100%
-    max-width: 100%
-
-.container__specials
+.container__slider, .container__about, .container__findus, .container__reservation, .container__specials, .container__footer, .container__thanks
     width: 100%
     max-width: 100%
 
@@ -120,3 +100,11 @@
 @media screen and (min-width: 2000px)
     .container__about, .container__findus, .container__reservation, .container__specials
         max-width: 30%
+
+@media screen and (min-width: 900px)
+    .container__footer
+        height: 200px
+
+@media screen and (min-width: 900px)
+    .container__body
+        min-height: calc(100vh - 200px)
