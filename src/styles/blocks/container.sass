@@ -60,51 +60,43 @@
     .container__about, .container__findus, .container__reservation, .container__specials, .container__thanks, .container__footer
        padding: 15px 30px 25px
 
-@media screen and (min-width: 900px)
     .container__about, .container__findus, .container__reservation, .container__specials
         margin: 10px
 
-@media screen and (min-width: 900px)
-  .container__flex
-    padding: 2em
-    display: flex
-    flex-wrap: wrap
-    flex-direction: column
-    max-height: 1080px
-    align-content: center
+    .container__flex
+        padding: 2em
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        max-height: 1080px
+        align-content: center
 
-@media screen and (min-width: 900px)
     .container__navbar, .container__slider
         display: none
 
-@media screen and (min-width: 900px)
     .container__about, .container__findus
         max-width: 48%
 
-@media screen and (min-width: 900px)
     .container__reservation, .container__specials
         max-width: 40%
         background-color: $white-bg-color
 
-@media screen and (min-width: 900px)
     .container__about, .container__findus, .container__reservation, .container__thanks, .container__specials
         border-radius: 20px
         box-shadow: 0 5px 12px rgba(0, 0, 0, 0.80)
 
-@media screen and (min-width: 900px)
     .container__thanks
         max-width: 70%
         background-color: $white-bg-color
         margin: 30px auto
+    
+    .container__body
+        min-height: calc(100vh - 200px)
+
+    .container__footer
+        height: 200px
 
 @media screen and (min-width: 2000px)
     .container__about, .container__findus, .container__reservation, .container__specials
         max-width: 30%
 
-@media screen and (min-width: 900px)
-    .container__footer
-        height: 200px
-
-@media screen and (min-width: 900px)
-    .container__body
-        min-height: calc(100vh - 200px)

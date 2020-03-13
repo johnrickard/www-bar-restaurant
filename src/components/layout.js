@@ -6,6 +6,7 @@ import Findus from './findus'
 import Reservation from './reservation'
 import Footer from './footer'
 import Specials from './specials'
+import Background from './background'
 
 import '../styles/global.sass'
 import '../fonts/fontawesome/css/all.min.css'
@@ -16,6 +17,9 @@ const Layout = () => {
       <Navbar />
       <Carousel />
       <div className="container__body">
+        <div className="reset__background">
+          <Background />
+        </div>
         <div className="container__flex">
           <About />
           <Findus />

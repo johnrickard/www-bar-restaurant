@@ -51,10 +51,6 @@ ol, ul
   list-style: none
   padding-left: 0
 
-@media screen and (min-width: 900px)
-  body
-    background-color: $grey-bg-color
-    background-image: url("../images/carousel/1-min.jpg")
-    background-position: center
-    background-repeat: no-repeat
-    background-size: cover
+@media screen and (max-width: 899px)
+    .reset__background
+        display: none
