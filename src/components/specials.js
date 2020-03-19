@@ -1,5 +1,6 @@
 import React from 'react'
 import SpecialsMenu from '../specialsmenu.pdf'
+import YAMLSpecials from '../yaml/specials.yaml'
 
 const Specials = () => {
   return (
@@ -8,14 +9,14 @@ const Specials = () => {
         <div className="anchor">
           <a id="specials"> </a>
           <div className="specials__flex_header">
-            <h1 className="specials__header">OUR SPECIALS</h1>
+            <h1 className="specials__header">{YAMLSpecials.title}</h1>
             <div className="specials__header_logo" />
           </div>
         </div>
-        <div className="specials__subheader">Click to view our specials</div>
+        <div className="specials__subheader">{YAMLSpecials.subheader}</div>
         <div className="specials__text">
           <div className="specials__icon">
-            <i class="fas fa-utensils"></i>
+            <i class={YAMLSpecials.icon} />
           </div>
         </div>
       </a>
