@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import YAMLThanks from '../yaml/thanks.yaml'
+import YAML from '../content.yaml'
 
 import '../styles/global.sass'
 import '../fonts/fontawesome/css/all.min.css'
@@ -15,11 +15,11 @@ export default class extends React.Component {
             {'body { background-image: none; background-color: #341817; }'}
           </style>
         </Helmet>
-        <h1 className="thanks__header">{YAMLThanks.title}</h1>
-        <div className="thanks__subheader">{YAMLThanks.subheader}</div>
+        <h1 className="thanks__header">{YAML.thanksTitle}</h1>
+        <div className="thanks__subheader">{YAML.thanksSubheader}</div>
         <Link to="/">
           <div className="thanks__text">
-            <i class={YAMLThanks.icon}></i> {YAMLThanks.iconText}
+            <i class={YAML.thanksIcon}></i> {YAML.thanksIconText}
           </div>
         </Link>
       </div>

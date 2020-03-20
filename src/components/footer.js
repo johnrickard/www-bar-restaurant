@@ -1,17 +1,15 @@
 import React from 'react'
 import ImgFb from '../images/fb.png'
 import ImgTa from '../images/tripadvisor.png'
-import YAMLFooter from '../yaml/footer.yaml'
+import YAML from '../content.yaml'
 
 const Footer = () => {
   return (
     <div className="container__footer">
-      <div className="footer__address">
-        Paseo Marítimo Rey de España 42 Local 0, 29640 Fuengriola, Málaga, Spain
-      </div>
+      <div className="footer__address">{YAML.footerAddress}</div>
       <div className="anchor">
         <a id="contact"> </a>
-        <div className="footer__phone">+34 123 45 67 89</div>
+        <div className="footer__phone">{YAML.footerPhoneNumber}</div>
       </div>
       <div className="footer__flex">
         <div className="footer__flex_item">
@@ -26,7 +24,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__credit">
-        {YAMLFooter.credit} <a href={YAMLFooter.url}>{YAMLFooter.name}</a>
+        {YAML.footerCredit} <a href={YAML.footerUrl}>{YAML.footerName}</a>
       </div>
     </div>
   )
