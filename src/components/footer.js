@@ -1,7 +1,7 @@
 import React from 'react'
-
 import ImgFb from '../images/fb.png'
 import ImgTa from '../images/tripadvisor.png'
+import YAMLFooter from '../yaml/footer.yaml'
 
 const Footer = () => {
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__credit">
-        Website made with ❤ by <a href="https://johnrickard.me">John Rickard</a>
+        {YAMLFooter.credit} <a href={YAMLFooter.url}>{YAMLFooter.name}</a>
       </div>
     </div>
   )
